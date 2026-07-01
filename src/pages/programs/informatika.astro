@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Hero from '../../components/Hero.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout title="Teknik Informatika" description="Program S1 Teknik Informatika">
+  <Navbar />
+  
+  <Hero 
+    title="S1 Teknik Informatika" 
+    subtitle="Membangun masa depan teknologi"
+    ctaText="Daftar Sekarang"
+    ctaLink="/admission"
+  />
+  
+  <section class="py-5">
+    <div class="container">
+      <!-- Overview -->
+      <div class="row mb-5">
+        <div class="col-md-8">
+          <h2 class="mb-4">Tentang Program</h2>
+          <p class="lead">
+            Program S1 Teknik Informatika dirancang untuk menghasilkan profesional 
+            yang kompeten di bidang teknologi informasi dan komputer. Dengan kurikulum 
+            berbasis industri, mahasiswa dipersiapkan untuk menjadi innovator dan 
+            problem solver di era digital.
+          </p>
+          <p>
+            Program ini menawarkan kombinasi sempurna antara teori dan praktik, 
+            dengan fokus pada pengembangan skill yang relevan dengan industri 
+            seperti web development, artificial intelligence, cloud computing, 
+            dan mobile application development.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Informasi Singkat</h5>
+              <ul class="list-unstyled">
+                <li><strong>Gelar:</strong> S.Kom</li>
+                <li><strong>Durasi:</strong> 4 Tahun</li>
+                <li><strong>Akreditasi:</strong> A (BANPT)</li>
+                <li><strong>Daya Tampung:</strong> 150 mahasiswa/tahun</li>
+                <li><strong>Biaya SPP:</strong> Rp 3.5 juta/semester</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- Kurikulum -->
+      <h2 class="mb-4">Kurikulum & Mata Kuliah Utama</h2>
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <h5 class="text-primary">Tahun 1-2: Fondasi</h5>
+          <ul>
+            <li>Dasar Pemrograman (C, C++, Java)</li>
+            <li>Algoritma dan Struktur Data</li>
+            <li>Matematika Diskrit</li>
+            <li>Basis Data</li>
+            <li>Praktik Laboratorium</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5 class="text-primary">Tahun 3-4: Spesialisasi</h5>
+          <ul>
+            <li>Web Development (React, Node.js)</li>
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Cloud Computing (AWS, GCP)</li>
+            <li>Cybersecurity</li>
+            <li>Skripsi/Capstone Project</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- Lulusan -->
+      <h2 class="mb-4">Prospek Karir Lulusan</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">💼 Software Engineer</h6>
+              <p class="card-text small">Bekerja di perusahaan tech terkemuka seperti Google, Microsoft, atau startup lokal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">🔍 Data Scientist</h6>
+              <p class="card-text small">Menganalisis big data untuk insights bisnis dan machine learning implementation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">🛡️ Security Analyst</h6>
+              <p class="card-text small">Melindungi sistem informasi dari ancaman cyber dan vulnerability.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">🌐 Web Developer</h6>
+              <p class="card-text small">Membuat aplikasi web modern dan full-stack solutions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">☁️ DevOps Engineer</h6>
+              <p class="card-text small">Mengelola infrastructure dan automation di cloud platforms.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">📱 Mobile Developer</h6>
+              <p class="card-text small">Mengembangkan aplikasi mobile untuk iOS dan Android.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- Fasilitas -->
+      <h2 class="mb-4">Fasilitas & Laboratorium</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h5>🖥️ Lab Komputer</h5>
+          <p>Dilengkapi dengan workstation berperforma tinggi untuk development dan research.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>📚 Digital Library</h5>
+          <p>Akses ke jurnal, e-book, dan database penelitian internasional 24/7.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>🤖 AI Lab</h5>
+          <p>Fasilitas khusus untuk research AI, machine learning, dan deep learning.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>☁️ Cloud Infrastructure</h5>
+          <p>Akses gratis ke AWS, Google Cloud, dan Azure untuk project development.</p>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- Dosen & Prestasi -->
+      <h2 class="mb-4">Dosen Berpengalaman</h2>
+      <p class="mb-4">
+        Tim dosen kami terdiri dari profesional bersertifikat dan peneliti dengan publikasi 
+        internasional di bidang computer science, AI, dan software engineering.
+      </p>
+      <div class="row">
+        <div class="col-md-3 text-center mb-4">
+          <div class="bg-light p-4 rounded">
+            <h6>Dr. Budi Santoso, S.Kom, M.Sc</h6>
+            <p class="small">AI & Machine Learning</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+          <div class="bg-light p-4 rounded">
+            <h6>Dr. Siti Rahayu, S.Kom, Ph.D</h6>
+            <p class="small">Cybersecurity & Networking</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+          <div class="bg-light p-4 rounded">
+            <h6>Ir. Ahmad Wijaya, M.Eng</h6>
+            <p class="small">Web & Mobile Dev</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+          <div class="bg-light p-4 rounded">
+            <h6>Dr. Rina Handayani, S.Si, M.Kom</h6>
+            <p class="small">Data Science & Analytics</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- CTA -->
+      <div class="bg-primary text-white p-5 rounded text-center">
+        <h3 class="mb-3">Siap Memulai Karir di Teknologi?</h3>
+        <p class="lead mb-4">Daftar sekarang dan bergabunglah dengan ribuan alumni sukses kami.</p>
+        <a href="/admission" class="btn btn-warning btn-lg">Daftar Sekarang</a>
+        <a href="/contact" class="btn btn-light btn-lg ms-2">Hubungi Kami</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

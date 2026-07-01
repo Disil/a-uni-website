@@ -10,21 +10,25 @@ const programs = [
     title: 'S1 Teknik Informatika',
     description: '4 tahun | Akreditasi A | Fokus pada AI, Web Dev, dan Cloud Computing',
     icon: '💻',
+    link: '/programs/informatika',
   },
   {
     title: 'S1 Teknik Sipil',
     description: '4 tahun | Akreditasi A | Desain dan manajemen proyek infrastruktur',
     icon: '🏗️',
+    link: '/programs/sipil',
   },
   {
     title: 'S1 Manajemen Bisnis',
     description: '4 tahun | Akreditasi B | Strategi bisnis dan leadership',
     icon: '📊',
+    link: '/programs/bisnis',
   },
   {
     title: 'S2 Teknologi Informasi',
     description: '2 tahun | Program lanjutan untuk profesional',
     icon: '🚀',
+    link: '#',
   },
 ];
 ---
@@ -34,7 +38,7 @@ const programs = [
   
   <Hero 
     title="Program Studi" 
-    subtitle="Pilih program yang sesuai dengan minat Anda"
+    subtitle="Pilih program yang sesuai dengan minat dan potensi Anda"
   />
   
   <section class="py-5">
@@ -46,7 +50,7 @@ const programs = [
               title={program.title}
               description={program.description}
               icon={program.icon}
-              link="#"
+              link={program.link}
             />
           </div>
         ))}

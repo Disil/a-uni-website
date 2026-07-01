@@ -1,0 +1,192 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Hero from '../../components/Hero.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout title="Teknik Sipil" description="Program S1 Teknik Sipil">
+  <Navbar />
+  
+  <Hero 
+    title="S1 Teknik Sipil" 
+    subtitle="Membangun infrastruktur untuk masa depan yang berkelanjutan"
+    ctaText="Daftar Sekarang"
+    ctaLink="/admission"
+  />
+  
+  <section class="py-5">
+    <div class="container">
+      <!-- Overview -->
+      <div class="row mb-5">
+        <div class="col-md-8">
+          <h2 class="mb-4">Tentang Program</h2>
+          <p class="lead">
+            Program S1 Teknik Sipil mempersiapkan mahasiswa menjadi engineer profesional 
+            yang mampu merancang, menganalisis, dan membangun infrastruktur berkualitas tinggi. 
+            Dengan pendekatan yang menggabungkan teori engineering dan praktik lapangan, 
+            lulusan kami siap menghadapi tantangan industri konstruksi modern.
+          </p>
+          <p>
+            Fokus program meliputi perancangan struktur bangunan, jembatan, jalan raya, 
+            sistem drainase, manajemen proyek konstruksi, dan sustainability dalam pembangunan.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Informasi Singkat</h5>
+              <ul class="list-unstyled">
+                <li><strong>Gelar:</strong> S.T (Sarjana Teknik)</li>
+                <li><strong>Durasi:</strong> 4 Tahun</li>
+                <li><strong>Akreditasi:</strong> A (BANPT)</li>
+                <li><strong>Daya Tampung:</strong> 120 mahasiswa/tahun</li>
+                <li><strong>Biaya SPP:</strong> Rp 3.2 juta/semester</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- Kurikulum -->
+      <h2 class="mb-4">Kurikulum & Mata Kuliah Utama</h2>
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <h5 class="text-primary">Tahun 1-2: Dasar Engineering</h5>
+          <ul>
+            <li>Mekanika Teknik & Statika</li>
+            <li>Matematika Teknik</li>
+            <li>Fisika Bangunan</li>
+            <li>Survei Pemetaan</li>
+            <li>CAD & Teknik Gambar</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5 class="text-primary">Tahun 3-4: Spesialisasi</h5>
+          <ul>
+            <li>Desain Struktur Bangunan</li>
+            <li>Teknologi Beton & Geoteknik</li>
+            <li>Manajemen Proyek Konstruksi</li>
+            <li>Rekayasa Jalan & Transportasi</li>
+            <li>Tugas Akhir & Practice</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- Keahlian -->
+      <h2 class="mb-4">Bidang Keahlian</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5>🏢 Struktur & Bangunan</h5>
+          <p>Perancangan, analisis, dan konstruksi gedung pencakar langit, rumah, dan infrastruktur bangunan lainnya.</p>
+        </div>
+        <div class="col-md-6">
+          <h5>🌉 Jembatan & Jalan</h5>
+          <p>Desain dan pembangunan jembatan, jalan raya, dan sistem transportasi modern.</p>
+        </div>
+        <div class="col-md-6">
+          <h5>💧 Sumber Daya Air</h5>
+          <p>Manajemen air, sistem irigasi, pengendalian banjir, dan sustainability air bersih.</p>
+        </div>
+        <div class="col-md-6">
+          <h5>🌍 Geoteknik & Lingkungan</h5>
+          <p>Studi tanah, pondasi, dan engineering ramah lingkungan untuk pembangunan berkelanjutan.</p>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- Lulusan -->
+      <h2 class="mb-4">Prospek Karir Lulusan</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">🏗️ Structural Engineer</h6>
+              <p class="card-text small">Merancang dan menganalisis struktur untuk keamanan dan efisiensi maksimal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">👨‍💼 Project Manager</h6>
+              <p class="card-text small">Mengelola proyek konstruksi dari perencanaan hingga penyelesaian.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">🛣️ Road & Transport Engineer</h6>
+              <p class="card-text small">Mendesain sistem transportasi dan infrastruktur jalan yang efisien.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">💧 Water Resources Engineer</h6>
+              <p class="card-text small">Mengelola sumber daya air dan sistem sanitasi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">🌱 Environmental Consultant</h6>
+              <p class="card-text small">Memastikan proyek konstruksi ramah lingkungan dan berkelanjutan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">👷 Site Engineer</h6>
+              <p class="card-text small">Mengawasi pelaksanaan konstruksi di lapangan dengan standar keselamatan tinggi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- Fasilitas -->
+      <h2 class="mb-4">Fasilitas & Laboratorium</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h5>🔬 Lab Mekanika Tanah</h5>
+          <p>Pengujian properties tanah, pondasi, dan geoteknik dengan peralatan standar internasional.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>🧪 Lab Material & Beton</h5>
+          <p>Uji kuat tekan, bending, durability dan kualitas material konstruksi.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>🖥️ Lab CAD & Struktur</h5>
+          <p>Komputer dengan software ETABS, SAP2000, AutoCAD untuk design dan analisis struktur.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>📐 Workshop & Field Lab</h5>
+          <p>Area praktik lapangan untuk surveying, leveling, dan on-site training.</p>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <!-- CTA -->
+      <div class="bg-primary text-white p-5 rounded text-center">
+        <h3 class="mb-3">Bangun Karir sebagai Engineer Profesional</h3>
+        <p class="lead mb-4">Raih kesempatan untuk merancang dan membangun infrastruktur masa depan.</p>
+        <a href="/admission" class="btn btn-warning btn-lg">Daftar Sekarang</a>
+        <a href="/contact" class="btn btn-light btn-lg ms-2">Hubungi Kami</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

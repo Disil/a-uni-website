@@ -10,16 +10,19 @@ const programs = [
     title: 'Teknik Informatika',
     description: 'Belajar programming, AI, dan web development terkini.',
     icon: '💻',
+    link: '/programs/informatika',  // UPDATE INI
   },
   {
     title: 'Teknik Sipil',
     description: 'Desain dan konstruksi infrastruktur modern.',
     icon: '🏗️',
+    link: '/programs/sipil',  // UPDATE INI
   },
   {
     title: 'Manajemen Bisnis',
     description: 'Pelajari strategi bisnis dan kepemimpinan.',
     icon: '📊',
+    link: '/programs/bisnis',  // UPDATE INI
   },
 ];
 ---
@@ -42,7 +45,7 @@ const programs = [
               title={program.title}
               description={program.description}
               icon={program.icon}
-              link="/programs"
+              link={program.link}
             />
           </div>
         ))}
