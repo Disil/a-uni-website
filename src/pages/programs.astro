@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
+
+const programs = [
+  {
+    title: 'S1 Teknik Informatika',
+    description: '4 tahun | Akreditasi A | Fokus pada AI, Web Dev, dan Cloud Computing',
+    icon: '💻',
+  },
+  {
+    title: 'S1 Teknik Sipil',
+    description: '4 tahun | Akreditasi A | Desain dan manajemen proyek infrastruktur',
+    icon: '🏗️',
+  },
+  {
+    title: 'S1 Manajemen Bisnis',
+    description: '4 tahun | Akreditasi B | Strategi bisnis dan leadership',
+    icon: '📊',
+  },
+  {
+    title: 'S2 Teknologi Informasi',
+    description: '2 tahun | Program lanjutan untuk profesional',
+    icon: '🚀',
+  },
+];
+---
+
+<BaseLayout title="Program Studi" description="Daftar lengkap program pendidikan kami">
+  <Navbar />
+  
+  <Hero 
+    title="Program Studi" 
+    subtitle="Pilih program yang sesuai dengan minat Anda"
+  />
+  
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        {programs.map((program) => (
+          <div class="col-md-6 col-lg-3">
+            <Card
+              title={program.title}
+              description={program.description}
+              icon={program.icon}
+              link="#"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

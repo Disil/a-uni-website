@@ -1,0 +1,32 @@
+---
+const navItems = [
+  { label: 'Beranda', href: '/' },
+  { label: 'Tentang', href: '/about' },
+  { label: 'Program Studi', href: '/programs' },
+  { label: 'Penerimaan', href: '/admission' },
+  { label: 'Kontak', href: '/contact' },
+];
+---
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">🎓 Universitas Anda</a>
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        {navItems.map((item) => (
+          <li class="nav-item">
+            <a class="nav-link" href={item.href}>{item.label}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</nav>

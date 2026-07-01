@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  ctaText?: string;
+  ctaLink?: string;
+}
+
+const { title, subtitle, ctaText = "Daftar Sekarang", ctaLink = "/admission" } = Astro.props;
+---
+
+<section class="hero-section">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">{title}</h1>
+    <p class="lead mb-4">{subtitle}</p>
+    <a href={ctaLink} class="btn btn-warning btn-lg">
+      {ctaText}
+    </a>
+  </div>
+</section>

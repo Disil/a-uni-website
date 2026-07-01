@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Penerimaan" description="Informasi pendaftaran mahasiswa baru">
+  <Navbar />
+  
+  <Hero 
+    title="Penerimaan Mahasiswa Baru" 
+    subtitle="Bergabunglah dengan komunitas akademis kami"
+  />
+  
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Jalur Pendaftaran</h2>
+      
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0">Jalur SNBP</h5>
+            </div>
+            <div class="card-body">
+              <p><strong>Jadwal:</strong> Oktober - November 2024</p>
+              <p><strong>Syarat:</strong> Nilai rapor semester 1-5</p>
+              <p><strong>Biaya:</strong> Gratis</p>
+              <a href="#" class="btn btn-primary">Daftar SNBP</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <h5 class="mb-0">Jalur SNBT</h5>
+            </div>
+            <div class="card-body">
+              <p><strong>Jadwal:</strong> Desember 2024 - Januari 2025</p>
+              <p><strong>Syarat:</strong> Lulus tes tulis standar nasional</p>
+              <p><strong>Biaya:</strong> Rp 200.000</p>
+              <a href="#" class="btn btn-success">Daftar SNBT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-light p-4 rounded">
+        <h4>Dokumen yang Diperlukan</h4>
+        <ul>
+          <li>Fotokopi kartu identitas (KTP/SIM/Paspor)</li>
+          <li>Surat keterangan lulus dari sekolah</li>
+          <li>Rapor sekolah</li>
+          <li>Pas foto 4x6 (2 lembar)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

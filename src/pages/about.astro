@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Tentang Kami" description="Sejarah dan profil universitas kami">
+  <Navbar />
+  
+  <Hero 
+    title="Tentang Universitas Kami" 
+    subtitle="Sejarah, Visi, dan Misi"
+    ctaText="Kembali ke Beranda"
+    ctaLink="/"
+  />
+  
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Sejarah Singkat</h2>
+      <p class="lead">
+        Universitas Anda didirikan pada tahun 2000 dengan visi menjadi institusi pendidikan 
+        terkemuka di Asia Tenggara.
+      </p>
+      <p>
+        Kami telah menghasilkan ribuan lulusan yang berkontribusi pada berbagai industri 
+        di seluruh dunia. Komitmen kami terhadap keunggulan akademik dan pengembangan karakter 
+        telah membuat kami menjadi pilihan utama siswa berbakat.
+      </p>
+
+      <hr class="my-5" />
+
+      <div class="row mt-4">
+        <div class="col-md-4 text-center mb-4">
+          <h5>Visi</h5>
+          <p>Menjadi universitas berbasis riset yang melahirkan pemimpin global.</p>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <h5>Misi</h5>
+          <p>Menyediakan pendidikan berkualitas dan mengembangkan inovasi berkelanjutan.</p>
+        </div>
+        <div class="col-md-4 text-center mb-4">
+          <h5>Nilai</h5>
+          <p>Integritas, keunggulan, dan tanggung jawab sosial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

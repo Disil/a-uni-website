@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  icon?: string;
+  link?: string;
+}
+
+const { title, description, icon = "📚", link = "#" } = Astro.props;
+---
+
+<div class="card h-100">
+  <div class="card-body">
+    <div class="fs-1 mb-3">{icon}</div>
+    <h5 class="card-title">{title}</h5>
+    <p class="card-text">{description}</p>
+    {link !== "#" && (
+      <a href={link} class="btn btn-primary btn-sm">Pelajari Lebih Lanjut</a>
+    )}
+  </div>
+</div>

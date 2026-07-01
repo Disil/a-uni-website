@@ -1,17 +1,77 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
 
+const programs = [
+  {
+    title: 'Teknik Informatika',
+    description: 'Belajar programming, AI, dan web development terkini.',
+    icon: '💻',
+  },
+  {
+    title: 'Teknik Sipil',
+    description: 'Desain dan konstruksi infrastruktur modern.',
+    icon: '🏗️',
+  },
+  {
+    title: 'Manajemen Bisnis',
+    description: 'Pelajari strategi bisnis dan kepemimpinan.',
+    icon: '📊',
+  },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Beranda" description="Selamat datang di Universitas Anda">
+  <Navbar />
+  
+  <Hero 
+    title="Universitas Anda" 
+    subtitle="Tempat Masa Depan Dimulai"
+  />
+  
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Program Unggulan</h2>
+      <div class="row g-4">
+        {programs.map((program) => (
+          <div class="col-md-4">
+            <Card
+              title={program.title}
+              description={program.description}
+              icon={program.icon}
+              link="/programs"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>Mengapa Memilih Kami?</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">✅ Dosen berpengalaman internasional</li>
+            <li class="mb-3">✅ Fasilitas modern dan lengkap</li>
+            <li class="mb-3">✅ Kurikulum berbasis industri</li>
+            <li class="mb-3">✅ Program magang berkualitas</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img 
+            src="https://via.placeholder.com/400x300" 
+            alt="Fasilitas" 
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>
